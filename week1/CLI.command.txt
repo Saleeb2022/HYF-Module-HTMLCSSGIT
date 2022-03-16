@@ -1,16 +1,17 @@
 Q1: How do I creat a hidden file or folder? How do I display it in the CLI?
-A1: first I have to create a file by executing $ mkdir hyf (or any other name for the folder). $ mkdir allows you to make a new directory.
-then executing $ touch command.txt (to creat a txt empty folder)
-then executing $ mv to move (move or rename file or directory) to  the mean file witch is I have already created and named it hyf.
-To display the file in the CLI: by executing $ ls (to print or view all the files, and directories including the hiddden).
+
+A1: first I have to create a file by executing $ mkdir hyf (or any other name for the folder). $ mkdir allows you to make a new directory.                                                                    To creat a hidden file bassh I have to put a . before the name of the file. 
+
+
+To display the file in the CLI: by executing $ ls (to print or view all the files). do display the hidden files I have to excute $is -a.
+creating hidden files by excuting $touch .hiddenfile.txt
 
 Q2: How do I creat multiple nested directories, like  /c/Users/myusername/these/folders/are/just/for/fun?
-A2: $mkdir /c/Users/myusername/these/folders/are/just/for/fun. (mkdir allows you to creat filles).
+A2: $mkdir -p /c/Users/myusername/these/folders/are/just/for/fun.
 
 Q3: How do I append a message to a file, without a newline charachter, so the output would be: 
 first message
 second message 
-A3: $ touch comments.txt (creating a new empty file)
-$ echo first message > comments.txt
-$ echo second message >> comments.txt
-$ cat comments.txt (tp print the content of the file ).
+A3: 
+$echo -n "first message" > filename.txt 
+$echo "second message">> filename.txt
